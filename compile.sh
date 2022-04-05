@@ -1,6 +1,6 @@
 #!/bash/bin
 
-curl localhost:1234/rest/v1/price > pre.json
+curl "localhost:1234/rest/v1/price?batch=1" > pre.json
 curl localhost:1234/rest/v1/history > history.json
 curl localhost:1234/rest/v1/store > stores.json
 node filterPrices.js > prices.json
