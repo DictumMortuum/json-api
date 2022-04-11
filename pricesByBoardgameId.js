@@ -43,7 +43,7 @@ const bootstrapPrices = data => {
   })
 
   Object.keys(rs).map(d => {
-    fs.writeFileSync("./rest/v1/boardgames/" + d + "/prices.json", JSON.stringify(rs[d]))
+    fs.writeFileSync("./rest/v1/boardgames/" + d + "/prices.json", JSON.stringify(rs[d].sort((a, b) => a.price - b.price)))
   })
 }
 
