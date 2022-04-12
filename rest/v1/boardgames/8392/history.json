@@ -1,1 +1,1 @@
-[{"cr_date":"2022-03-01T00:00:00+02:00","price":19.99,"stock":false,"store_id":8},{"cr_date":"2022-04-01T00:00:00+03:00","price":19.99,"stock":false,"store_id":8},{"cr_date":"2022-04-01T00:00:00+03:00","price":20.4,"stock":true,"store_id":18}]
+[{"cr_date":"2022-03-01T00:00:00+02:00","price":19.99,"stock":false,"store_id":8},{"cr_date":"2022-04-01T00:00:00+03:00","price":20.4,"stock":true,"store_id":18},{"cr_date":"2022-04-01T00:00:00+03:00","price":19.99,"stock":false,"store_id":8},{"cr_date":"2022-04-01T00:00:00+03:00","price":19.8,"stock":true,"store_id":18}]
