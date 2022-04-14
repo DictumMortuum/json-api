@@ -31,7 +31,7 @@ const bootstrapPrices = data => {
   })
 
   data.map(d => {
-    const { boardgame_id, ...rest } = d;
+    const { boardgame_id,  thumb, rank, cr_date, ...rest } = d;
     rs[d.boardgame_id].push(rest)
   })
 
@@ -82,7 +82,8 @@ const bootstrapPricesById = data => {
   })
 
   Object.keys(rs).map(d => {
-    fs.writeFileSync("./rest/v1/prices/" + d + ".json", JSON.stringify(rs[d]))
+    const { cr_date, thumb, rank, ...rest } = rs[d]
+    fs.writeFileSync("./rest/v1/prices/" + d + ".json", JSON.stringify(rest))
   })
 }
 
