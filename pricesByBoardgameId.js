@@ -1,4 +1,7 @@
-var fs = require('fs');
+const fs = require('fs');
+const { createGzip } = require('zlib');
+const { pipeline } = require('stream');
+const { createReadStream, createWriteStream } = require('fs');
 
 const reducePrices = data => {
   const rs = [];
@@ -21,6 +24,17 @@ const reducePrices = data => {
   })
 
   fs.writeFileSync("./rest/v1/prices.json", JSON.stringify(rs))
+
+  const gzip = createGzip();
+  const source = createReadStream("./rest/v1/prices.json");
+  const destination = createWriteStream("./rest/v1/prices.json.gz");
+
+  pipeline(source, gzip, destination, (err) => {
+    if (err) {
+      console.error('An error occurred:', err);
+      process.exitCode = 1;
+    }
+  });
 }
 
 const bootstrapPrices = data => {
