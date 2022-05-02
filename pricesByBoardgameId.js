@@ -139,6 +139,8 @@ const bootstrapBoardgames = data => {
       obj.rank = rank
     }
 
+    obj.images.sort()
+
     fs.writeFileSync("./rest/v1/boardgames/" + d + "/boardgame.json", JSON.stringify(obj))
   })
 }
