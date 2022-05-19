@@ -118,6 +118,8 @@ const bootstrapBoardgames = data => {
     if (!fs.existsSync(dir)){
       fs.mkdirSync(dir);
     }
+
+    fetch("http://127.0.0.1:1234/rest/v1/image/" + d)
   })
 
   Object.keys(rs).map(d => {
