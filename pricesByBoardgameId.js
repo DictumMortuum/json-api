@@ -122,11 +122,11 @@ const bootstrapBoardgames = data => {
     const data = rs[d];
     const { rank } = data[0];
 
-    if (rank > 0 && rank < 1000) {
+    if (rank > 0 && rank < 3000) {
       fetch("http://127.0.0.1:1234/rest/v1/image/" + d)
       .then(res => res.json())
       // .then(res => console.log(res))
-      .catch(err => console.log(err))
+      .catch(err => console.log(d, err))
     }
   })
 
