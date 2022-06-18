@@ -1,23 +1,23 @@
 {
-  "vertical": {
+  "Vertical": {
     "id": { "int": { "min": 0, "max": 100 }},
     "name": { "string": {}}
   },
-  "department": {
+  "Department": {
     "id": { "int": { "min": 0, "max": 100 }},
     "vertical_id": { "int": { "min": 0, "max": 100 }},
     "name": { "string": {}}
   },
-  "role": {
+  "Role": {
     "id": { "int": { "min": 0, "max": 100 }},
     "name": { "string": {}}
   },
-  "team": {
+  "Team": {
     "id": { "int": { "min": 0, "max": 100 }},
     "department_id": { "int": { "min": 0, "max": 100 }},
     "name": { "string": {}}
   },
-  "person": {
+  "Person": {
     "id": { "int": { "min": 0, "max": 100 }},
     "team_id": { "int": { "min": 0, "max": 100 }},
     "role_id": { "int": { "min": 0, "max": 100 }},
