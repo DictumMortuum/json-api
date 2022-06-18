@@ -1,0 +1,26 @@
+{
+  "vertical": {
+    "id": { "int": { "min": 0, "max": 100 }},
+    "name": { "string": {}}
+  },
+  "department": {
+    "id": { "int": { "min": 0, "max": 100 }},
+    "vertical_id": { "int": { "min": 0, "max": 100 }},
+    "name": { "string": {}}
+  },
+  "role": {
+    "id": { "int": { "min": 0, "max": 100 }},
+    "name": { "string": {}}
+  },
+  "team": {
+    "id": { "int": { "min": 0, "max": 100 }},
+    "department_id": { "int": { "min": 0, "max": 100 }},
+    "name": { "string": {}}
+  },
+  "person": {
+    "id": { "int": { "min": 0, "max": 100 }},
+    "team_id": { "int": { "min": 0, "max": 100 }},
+    "role_id": { "int": { "min": 0, "max": 100 }},
+    "name": { "string": {}}
+  }
+}
