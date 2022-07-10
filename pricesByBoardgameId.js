@@ -205,5 +205,9 @@ fetch("http://127.0.0.1:1234/rest/v1/history")
 fetch("http://127.0.0.1:1234/rest/v1/store")
   .then(res => res.json())
   .then(res => {
+    res.sort((a, b) => ('' + a.name).localeCompare(b.name))
+    return res
+  })
+  .then(res => {
     fs.writeFileSync("./rest/v1/stores.json", JSON.stringify(res))
   })
