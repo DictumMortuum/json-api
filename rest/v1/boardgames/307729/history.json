@@ -1,1 +1,1 @@
-[{"cr_date":"2022-11-01T00:00:00+02:00","price":15,"stock":0,"store_id":5},{"cr_date":"2022-12-01T00:00:00+02:00","price":15,"stock":0,"store_id":5},{"cr_date":"2023-03-01T00:00:00+02:00","price":15,"stock":2,"store_id":5}]
+[{"cr_date":"2022-11-01T00:00:00+02:00","price":15,"stock":0,"store_id":5},{"cr_date":"2022-12-01T00:00:00+02:00","price":15,"stock":0,"store_id":5},{"cr_date":"2023-03-01T00:00:00+02:00","price":15,"stock":2,"store_id":5},{"cr_date":"2023-04-01T00:00:00+03:00","price":15,"stock":2,"store_id":5}]
